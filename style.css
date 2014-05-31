@@ -1,0 +1,26 @@
+#board {
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+}
+
+.square {
+  width: 25px;
+  height: 25px;
+  outline: 1px solid #404040;
+  float: left;
+}
+
+#board:after {
+  clear: both;
+  content: ' ';
+  display: block;
+}
+
+.snake {
+  background-color: #00FF33;
+}
+
+.apple {
+  background-color: #CE0000;
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="underscore.js"></script>
+  <script src="jquery.js"></script>
+  <script src="snake.js"></script>
+  <script src="snake_ui.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div id="board"></div>
+
+  <script>
+    var $board = $('#board');
+    var view = new SnakeGame.View($board);
+    view.start();
+  </script>
+</body>
+</html>
