@@ -91,16 +91,16 @@
   };
 
   Coord.prototype.checkForWrapping = function () {
-    if (this.x > 19) {
+    if (this.x > 29) {
       this.x = 0;
     } else if (this.x < 0) {
-      this.x = 19;
+      this.x = 29;
     }
 
-    if (this.y > 19) {
+    if (this.y > 39) {
       this.y = 0;
     } else if (this.y < 0) {
-      this.y = 19;
+      this.y = 39;
     }
   };
 
@@ -112,8 +112,8 @@
   Board.prototype.render = function() {
     var str = "";
     var board = this;
-    for (var i = 0; i < 20; i++) {
-      for (var j = 0; j < 20; j++) {
+    for (var i = 0; i < 30; i++) {
+      for (var j = 0; j < 40; j++) {
 
         if (board.isSnake([i, j])) {
           str += "<div class='snake square'></div>";

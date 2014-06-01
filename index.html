@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title>Snake</title>
   <script src="underscore.js"></script>
   <script src="jquery.js"></script>
   <script src="snake.js"></script>
@@ -9,7 +10,17 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <div id="board"></div>
+  <div class='container'>
+    <div class='header'>
+      <h1>snake</h1>
+      <h3>use your arrow keys to play!</h3>
+    </div>
+
+    <div id="board"></div>
+    <div class='footer'>
+      <p>built by <a href='http://linkedin.com/rhonsby'>robert honsby</a></p>
+    </div>
+  </div>
 
   <script>
     var $board = $('#board');
